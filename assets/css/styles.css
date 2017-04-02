@@ -46,6 +46,13 @@ h2 {
   left: 0;
   width: 10%;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  display: inline;
 }
 
 
@@ -54,7 +61,6 @@ h2 {
 .sidebar-link {
   display: block;
   height: 20vh;
-  border-bottom: 1px solid #fff;
   background-color: #000;
   background-position: center;
   background-size: cover;
