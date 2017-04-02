@@ -35,7 +35,7 @@ h2 {
 
 
 /* sets overall page container max width */
-.container-fluid { max-width: 1200px; }
+.container-fluid { max-width: 100%; }
 
 
 /* sidebar */
