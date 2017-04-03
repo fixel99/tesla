@@ -35,7 +35,25 @@ h2 {
 
 
 /* sets overall page container max width */
+
 .container-fluid { max-width: 100%; }
+
+
+/* fades divs that are not hovered */
+
+.container-fluid > div {
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  opacity:0.6;
+}
+
+.container-fluid:hover > div {
+  opacity: 0.6;
+}
+
+.container-fluid > div:hover {
+  opacity: 1;
+}
 
 
 /* sidebar */
@@ -147,21 +165,22 @@ h2 {
 /* tesla-panel - model1 */
 
 .tesla-panel-model1 {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/model-s.png);
 }
 
 
 /* tesla-panel - model2 */
 
 .tesla-panel-model2 {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/model-x.jpg);
 }
 
 
 /* tesla-panel - model3 */
 
 .tesla-panel-model3 {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/model-3.jpeg);
+  padding-top: 5vh;
 }
 
 
@@ -176,14 +195,14 @@ h2 {
 /* tesla-panel - about */
 
 .tesla-panel-about {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/tesla-showroom.jpeg);
 }
 
 
 /* tesla-panel - contact */
 
 .tesla-panel-contact {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/tesla-showroom.jpeg);
 }
 
 
