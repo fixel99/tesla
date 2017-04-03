@@ -11,6 +11,8 @@ ToDo:
 
 3) Code to allow Contact Form utilisation
 
+4) Modify Sidebar to allow for mobile/tablet viewing
+
 
 After:
 
