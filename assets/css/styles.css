@@ -39,9 +39,9 @@ h2 {
 .container-fluid { max-width: 100%; }
 
 
-/* fades divs that are not hovered */
+/* fades divs that are not hovered - currently commented out until properly implemented */
 
-.container-fluid > div {
+/*.container-fluid > div {
   -webkit-transition:0.5s;
   transition:0.5s;
   opacity:0.6;
@@ -53,7 +53,7 @@ h2 {
 
 .container-fluid > div:hover {
   opacity: 1;
-}
+}*/
 
 
 /* sidebar */
