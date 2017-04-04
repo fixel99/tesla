@@ -56,7 +56,9 @@ h2 {
 }*/
 
 
-.google-maps {
+/*Google Map embed responsive - Commented out until properly implemented */
+
+/*.google-maps {
         position: relative;
         padding-bottom: 100%; // This is the aspect ratio
         height: 0;
@@ -67,8 +69,8 @@ h2 {
         top: 0;
         left: 0;
         width: 100% !important;
-        /*height: 100% !important;*/
-    }
+        /*height: 100% !important;
+    }*/
     
 
 /* sidebar */
