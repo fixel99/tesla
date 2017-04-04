@@ -152,6 +152,7 @@ h2 {
   background-position: center;
   background-size: cover;
   padding-top: 10vh;
+  background-attachment: fixed;
 }
 
 
@@ -187,7 +188,7 @@ h2 {
 /* tesla-panel - map */
 
 .tesla-panel-map {
-  background-image: url(../img/model-s-mountains.jpg);
+  background-image: url(../img/map-blurred.jpg);
 }
 
 
