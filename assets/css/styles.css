@@ -240,3 +240,11 @@ h2 {
 .home-subheading {
   margin-bottom: 20px;
 }
+
+
+
+
+
+.active{
+  background-image: url(../img/tesla-showroom.jpeg); /*Test image */
+}

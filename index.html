@@ -16,8 +16,7 @@
 		<!-- Bootstrap Core CSS file -->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-		<!-- Override CSS file - add your own CSS rules -->
-		<link rel="stylesheet" href="assets/css/overrides.css">
+		<!-- Override CSS file -->
 		<link rel="stylesheet" href="assets/css/styles.css">
 
 		<!-- Conditional comment containing JS files for IE6 - 8 -->
@@ -141,7 +140,28 @@
 		<!-- /.container-fluid -->
 
 		<!-- JQuery scripts -->
-	    <script src="assets/js/jquery-1.11.2.min.js"></script>
+	    <script src="assets/js/jquery-1.11.2.min.js">
+	    	$(document).ready(function () {
+    			$(document).on("scroll", onScroll);
+	    	});
+	    	
+	    	function onScroll(event){
+    			var scrollPos = $(document).scrollTop();
+    			 $('.sidebar a').each(function () {
+        			var currLink = $(this);
+        			var refElement = $(currLink.attr("href"));
+        			if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        				 $('.sidebar li a').removeClass("active");
+        				 currLink.addClass("active");
+        			}
+        			else{
+        				 currLink.removeClass("active");
+        			}
+    		});
+		}
+    			
+	    	
+	    </script>
 
 		<!-- Bootstrap Core scripts -->
 		<script src="assets/js/bootstrap.min.js"></script>
