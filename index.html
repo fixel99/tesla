@@ -29,7 +29,7 @@
 
 
 	<!-- Sidenav -->
-	<ul class="sidebar" role="navigation">
+	<ul class="sidebar hidden-sm hidden-xs" role="navigation">
 	  <li><a class="sidebar-link sidebar-link-home" href="#home">Home</a></li>
 	  <li><a class="sidebar-link sidebar-link-models" href="#models">Models</a></li>
 	  <li><a class="sidebar-link sidebar-link-map" href="#map">Map</a></li>
@@ -143,7 +143,9 @@
 	    <script src="assets/js/jquery-1.11.2.min.js">
 	    	$(document).ready(function () {
     			$(document).on("scroll", onScroll);
+    			console.log("Test");
 	    	});
+	    	
 	    	
 	    	function onScroll(event){
     			var scrollPos = $(document).scrollTop();

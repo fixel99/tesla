@@ -1,8 +1,22 @@
 /* base styles */
 
-body {
+/*Overide text to display white*/
+html *{
+    color: #fff;
+}
+
+/*md+ include padding for side navbar */
+@media (min-width: 992px){
+  body {
   padding-left: 10%;
-  color: #fff;
+  }
+}
+
+/*sm- get rid of padding for side navbar*/
+@media (max-width: 991px) {
+  body {
+    padding-left: 0px !important;
+  }
 }
 
 h1,
@@ -79,7 +93,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%;
+  width: 10%; 
   height: 100vh;
   margin: 0;
   padding: 0;
