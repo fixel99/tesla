@@ -194,6 +194,13 @@ h2 {
 }
 
 
+/* tesla-panel - modelshome */
+
+.tesla-panel-modelshome {
+  background-image: url(../img/modelshome.jpg);
+}
+
+
 /* tesla-panel - model1 */
 
 .tesla-panel-model1 {
