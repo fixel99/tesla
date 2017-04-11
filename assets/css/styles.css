@@ -47,6 +47,10 @@ h2 {
   font-size: 80px;
 }
 
+.font-size-20 {
+  font-size: 20px;
+}
+
 
 /* sets overall page container max width */
 
@@ -197,7 +201,7 @@ h2 {
 /* tesla-panel - modelshome */
 
 .tesla-panel-modelshome {
-  background-image: url(../img/modelshome.jpg);
+  background-image: url(../img/models.png);
 }
 
 
