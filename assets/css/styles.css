@@ -202,6 +202,8 @@ h2 {
 
 .tesla-panel-modelshome {
   background-image: url(../img/models.png);
+  padding-top: 5vh;
+  /* Background needs to be centered to page in order to avoice cutoff */
 }
 
 
