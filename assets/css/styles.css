@@ -275,3 +275,10 @@ h2 {
 .active{
   background-image: url(../img/tesla-showroom.jpeg); /*Test image */
 }
+
+
+
+.is-inview {
+  border-style: solid;
+  border-width: 1px;
+}

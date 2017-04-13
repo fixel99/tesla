@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  margin: 0;
+  padding: 0 0 0 10%;
+}
+
+h2 {
+  margin: 0;
+}
+
+
+/* sidebar */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  display: inline;
+}
+
+
+/* all sidebar links */
+
+.sidebar-link {
+  display: block;
+  height: 20vh;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  text-indent: -500em;
+}
+
+.sidebar-link:hover {
+  background-color: #555;
+}
+
+
+/* home */
+
+.sidebar-link-home {
+  background: rgb(20,20,20);
+}
+
+.sidebar-link-home:hover {
+  background: black;
+}
+
+
+/* models */
+
+.sidebar-link-models {
+  background: rgb(40,40,40);
+}
+
+.sidebar-link-models:hover {
+  background: black;
+}
+
+
+/* map */
+
+.sidebar-link-map {
+  background: rgb(60,60,60);
+}
+
+.sidebar-link-map:hover {
+  background: black;
+}
+
+
+/* about */
+
+.sidebar-link-about {
+  background: rgb(80,80,80);
+}
+
+.sidebar-link-about:hover {
+  background: black;
+}
+
+
+/* contact */
+
+.sidebar-link-contact {
+  background: rgb(100,100,100);
+}
+
+.sidebar-link-contact:hover {
+  background: black;
+}
+
+
+/* hover */
+
+.is-inview {
+  color: #fff;
+  background-color: lime;
+}
+
+
+/* pane. */
+
+.tesla-panel {
+  height: 100vh;
+  padding: 30px;
+  background: #fff;
+}

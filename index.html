@@ -5,8 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Tesla - Home</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="Description" lang="en" content="ADD SITE DESCRIPTION">
-		<meta name="author" content="ADD AUTHOR INFORMATION">
+		<meta name="Description" lang="en" content="A prototype Tesla website for a Multimedia Major Work Assessment">
+		<meta name="author" content="Felix Partos">
 		<meta name="robots" content="index, follow">
 
 		<!-- icons -->
@@ -29,13 +29,15 @@
 
 
 	<!-- Sidenav -->
-	<ul class="sidebar hidden-sm hidden-xs" role="navigation">
-	  <li><a class="sidebar-link sidebar-link-home" href="#home">Home</a></li>
-	  <li><a class="sidebar-link sidebar-link-models" href="#models">Models</a></li>
-	  <li><a class="sidebar-link sidebar-link-map" href="#map">Map</a></li>
-	  <li><a class="sidebar-link sidebar-link-about" href="#about">About</a></li>
-	  <li><a class="sidebar-link sidebar-link-contact" href="#contact">Contact</a></li>
-	</ul>
+	<div id="js-scrollspy">
+		<ul class="sidebar hidden-sm hidden-xs" role="navigation">
+		  <li><a class="sidebar-link sidebar-link-home" href="#home">Home</a></li>
+		  <li><a class="sidebar-link sidebar-link-models" href="#models">Models</a></li>
+		  <li><a class="sidebar-link sidebar-link-map" href="#map">Map</a></li>
+		  <li><a class="sidebar-link sidebar-link-about" href="#about">About</a></li>
+		  <li><a class="sidebar-link sidebar-link-contact" href="#contact">Contact</a></li>
+		</ul>
+	</div>
 
 
 		<!-- Page Content -->
@@ -168,8 +170,30 @@
 		</div>
 		<!-- /.container-fluid -->
 
+		<script src="scrollspy.js"></script>
+	    <script>
+	      var spy = new ScrollSpy('#js-scrollspy', {
+	        nav: '.sidebar > li > a',
+	        className: 'is-inview',
+	        callback: function () {
+	        }
+	      });
+
+	      var subSpy = new ScrollSpy('#js-scrollspy', {
+	        nav: '.sidebar > li > a',
+	        className: 'is-inview'
+	      });
+	    </script>
+
+
+
+
+
+
+
+
 		<!-- JQuery scripts -->
-	    <script src="assets/js/jquery-1.11.2.min.js">
+	    <!--<script src="assets/js/jquery-1.11.2.min.js">
 	    	$(document).ready(function () {
     			$(document).on("scroll", onScroll);
     			console.log("Test");
@@ -192,7 +216,7 @@
 		}
     			
 	    	
-	    </script>
+	    </script>-->
 
 		<!-- Bootstrap Core scripts -->
 		<script src="assets/js/bootstrap.min.js"></script>
