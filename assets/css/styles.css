@@ -1,21 +1,21 @@
 /* base styles */
 
 /*Overide text to display white*/
-html *{
-    color: #fff;
+html * {
+  color: #fff;
 }
 
 /*md+ include padding for side navbar */
-@media (min-width: 992px){
+@media (min-width: 992px) {
   body {
-  padding-left: 10%;
+    padding-left: 10%;
   }
 }
 
 /*sm- get rid of padding for side navbar*/
 @media (max-width: 991px) {
   body {
-    padding-left: 0px !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -54,7 +54,9 @@ h2 {
 
 /* sets overall page container max width */
 
-.container-fluid { max-width: 100%; }
+.container-fluid {
+  max-width: 100%;
+}
 
 
 /* fades divs that are not hovered - currently commented out until properly implemented */
@@ -89,7 +91,7 @@ h2 {
         width: 100% !important;
         /*height: 100% !important;
     }*/
-    
+
 
 /* sidebar */
 
@@ -97,7 +99,7 @@ h2 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10%; 
+  width: 10%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -117,77 +119,90 @@ h2 {
   background-color: #000;
   background-position: center;
   background-size: cover;
-  text-indent: -500em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+
+.sidebar-link span {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  color: #000;
 }
 
 .sidebar-link:hover {
-  background-color: #555;
+  background-color: #333;
+  color: #fff;
 }
+
+.sidebar-link:hover span {
+  color: #fff;
+}
+
+.is-inview:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 45%;
+  border-top: 8px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 8px solid transparent;
+}
+
+.is-inview span {
+  color: #fff;
+}
+
 
 
 /* home */
 
 .sidebar-link-home {
-  background-image: url(../img/sidebar-home.png);
-}
-
-.sidebar-link-home:hover {
-  background-image: url(../img/sidebar-home-hover.png);
+  background-image: url(../img/sidebar-home.svg);
 }
 
 
 /* models */
 
 .sidebar-link-models {
-  background-image: url(../img/sidebar-models.png);
+  background-image: url(../img/sidebar-models.svg);
 }
 
-.sidebar-link-models:hover {
-  background-image: url(../img/sidebar-models-hover.png);
-}
 
 
 /* map */
 
 .sidebar-link-map {
-  background-image: url(../img/sidebar-map.png);
-}
-
-.sidebar-link-map:hover {
-  background-image: url(../img/sidebar-map-hover.png);
+  background-image: url(../img/sidebar-map.svg);
 }
 
 
 /* about */
 
 .sidebar-link-about {
-  background-image: url(../img/sidebar-about.png);
+  background-image: url(../img/sidebar-about.svg);
 }
 
-.sidebar-link-about:hover {
-  background-image: url(../img/sidebar-about-hover.png);
-}
 
 
 /* contact */
 
 .sidebar-link-contact {
-  background-image: url(../img/sidebar-contact.png);
+  background-image: url(../img/sidebar-contact.svg);
 }
 
-.sidebar-link-contact:hover {
-  background-image: url(../img/sidebar-contact-hover.png);
-}
 
 
 /* all tesla-panels */
 
 .tesla-panel {
   height: 100vh;
-  background-position: center;
-  background-size: cover;
   padding-top: 10vh;
   background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 
@@ -201,8 +216,8 @@ h2 {
 /* tesla-panel - modelshome */
 
 .tesla-panel-modelshome {
-  background-image: url(../img/models.png);
   padding-top: 5vh;
+  background-image: url(../img/models.png);
   /* Background needs to be centered to page in order to avoice cutoff */
 }
 
@@ -224,8 +239,8 @@ h2 {
 /* tesla-panel - model3 */
 
 .tesla-panel-model3 {
-  background-image: url(../img/model-3.jpeg);
   padding-top: 5vh;
+  background-image: url(../img/model-3.jpeg);
 }
 
 
@@ -253,8 +268,8 @@ h2 {
 /* text panel */
 
 .text-panel {
-  background-color: rgba(0, 0, 0, .2);
   padding: 2em;
+  background-color: rgba(0, 0, 0, .2);
 }
 
 
@@ -266,19 +281,4 @@ h2 {
 
 .home-subheading {
   margin-bottom: 20px;
-}
-
-
-
-
-
-.active{
-  background-image: url(../img/tesla-showroom.jpeg); /*Test image */
-}
-
-
-
-.is-inview {
-  border-style: solid;
-  border-width: 1px;
 }
