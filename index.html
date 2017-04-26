@@ -121,16 +121,16 @@
         <div class="col-sm-8 col-sm-offset-2">
           <div class="text-panel text-center">
             <h2>Map</h2>
-            <p>Choose the closest location:</p> <!-- Map should display depending on which button clicked -->
-            <br>
-            <button class="btn btn-primary">St. Leonards</button>
-            <br>
-            <br>
-            <button class="btn btn-danger">Sydney CBD</button>
+            <p class="font-size-20">Choose the closest location:</p> <!-- Map should display depending on which button clicked -->
+            <a class="btn btn-primary" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=14&ll=-33.8168432, 151.1930646" target="search_iframe">St. Leonards</a>
             <br>
             <br>
+            <a class="btn btn-danger" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=14&ll=-33.8673355, 151.2065621" target="search_iframe">Martin Place</a>
+            <br>
+            <br>
+            <p class="font-size-20">(Click on a pin for more info)</p>
             <div class="google-maps"> <!-- col-sm-8 col-sm-offset-2 -->
-              <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs" width="640" height="480"></iframe>
+              <iframe name="search_iframe" src="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" width="640" height="480"></iframe>
             </div>
           </div>
 
@@ -200,6 +200,11 @@
 
     <!-- JQuery scripts -->
       <script src="assets/js/jquery-1.11.2.min.js"></script>
+        <script>
+          /*function leonard(){
+            document.getElementByID("")
+          }*/
+
 
     <!-- Bootstrap Core scripts -->
     <script src="assets/js/bootstrap.min.js"></script>
