@@ -249,6 +249,7 @@ h2 {
 .tesla-panel-map {
   padding-top: 2vh;
   background-image: url(../img/map-blurred.jpg);
+  padding-bottom: 2vh;
 }
 
 
@@ -282,4 +283,8 @@ h2 {
 
 .home-subheading {
   margin-bottom: 20px;
+}
+
+iframe, object, embed {
+    max-width: 100%;
 }
