@@ -7,18 +7,20 @@ ToDo:
 
 1) Embed Google Map and allow for responsive viewing (1/2 done)
 
-2) Code to allow Contact Form utilisation
+2) Add animation/scrolling magic to webpage
 
-3) Add animation/scrolling magic to webpage (Including fade in)
+3) Add proper content to panels
 
-4) Add proper content to panels
-
-5) Add video to website (Through youtube embed or panel background) once done
+4) Add video to website (Through youtube embed or panel background) once done
 
 
 Maybe:
 
-1) Add sepeate page for each model
+1) Add seperate page for each model
 
-2) Add eastereggs
+2) Add more form validation + show where form not filled in
+
+3) Add backend to form
+
+4) Add eastereggs
 
