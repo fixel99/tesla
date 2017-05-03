@@ -226,14 +226,13 @@
         $('form#contact-form :input').each(function(){
           if($(this).val()==""){
             empty = true;
-            console.log("empty");
+            //console.log("empty");
             count++;
-            console.log(count);
+            //console.log(count);
           }
           });
         if(count == 1){
-          console.log("other" + count);
-          console.log("ifother");
+          //console.log("other" + count);
           $('#form-submit').after("<br class='loading'><img class='loading' src='./assets/img/loading.gif' width='80' height='80'>");
           $('#form-submit').hide();
           window.setTimeout(function(){
