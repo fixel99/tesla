@@ -161,15 +161,15 @@
             <form action="#" id="contact-form">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email Address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <input type="email" class="form-control" id="email" placeholder="Email">
               </div>
               <div class="form-group">
                 <label for="exampleInputName1">Name</label>
-                <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
                <div class="form-group">
                 <label for="exampleTextAreaComment1">Comment</label>
-                <textarea class="form-control" rows="5" id="exampleTextAreaComment1" placeholder="Comment"></textarea>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
               </div>
               <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
             </form>
@@ -218,6 +218,19 @@
 
       });
 
+      $('#email').on('input', function() {
+        $('#email').removeClass("error");
+      });
+
+      $('#name').on('input', function() {
+        $('#name').removeClass("error");
+      });
+
+      $('#comment').on('input', function() {
+        $('#comment').removeClass("error");
+      });
+
+
       $('#contact-form').on('submit', function(event) {
         event.preventDefault();
         var empty = false;
@@ -226,7 +239,11 @@
         $('form#contact-form :input').each(function(){
           if($(this).val()==""){
             empty = true;
-            //console.log("empty");
+            //console.log($(this));
+            if(!$(this).is(":button")){
+              $(this).addClass("error");
+            }
+
             count++;
             //console.log(count);
           }
