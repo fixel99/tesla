@@ -367,11 +367,15 @@ h2 {
 }
 
 
-
+/* Remove space around loading elements */
 .loading{
   border: 0;
   padding: 0;
+}
 
+/* Stop comment area from resizing */
+textarea {
+    resize: none;
 }
 
 
