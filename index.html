@@ -283,6 +283,22 @@
       });
 
 
+      function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+        $('<assets/img/>')[0].src = this;
+        });
+      }
+
+
+
+      preload([
+        'assets/img/model-s-mountains.jpg',
+        'assets/img/models.png'
+        
+       /* 'assets/img/anotherOne.jpg',
+       'assetsimg/blahblahblah.jpg'*/
+      ]);
+
       </script>
 
     <!-- Bootstrap Core scripts -->
