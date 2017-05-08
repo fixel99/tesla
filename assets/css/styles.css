@@ -138,43 +138,6 @@ h2 {
 }
 
 
-@media (max-width: 991px) {
-  .sidebar {
-    width: 100vw;
-    height: 50px;
-    font-size: 12px;
-  }
-
-  .sidebar-link {
-    float: left;
-    width: 20vw;
-    height: 50px;
-    border-right: 1px solid #666;
-    background-image: none !important;
-  }
-
-  .sidebar-link span {
-    position: static;
-    display: inline-block;
-    padding: 15px 0 0;
-  }
-
-  .sidebar-link span,
-  .sidebar-link:hover span,
-  .is-inview span {
-    color: #fff;
-  }
-
-  .is-inview:after {
-    position: absolute;
-    top: 31px;
-    right: 45%;
-    border-bottom: 10px solid #fff;
-    border-right: 8px solid transparent;
-    border-left: 8px solid transparent;
-  }
-}
-
 
 /* icons */
 
@@ -382,3 +345,48 @@ iframe, object, embed {
     max-width: 100%;
 
 }
+
+/* small sizes */
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 100vw;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .sidebar-link {
+    float: left;
+    width: 20vw;
+    height: 50px;
+    border-right: 1px solid #666;
+    background-image: none !important;
+  }
+
+  .sidebar-link span {
+    position: static;
+    display: inline-block;
+    padding: 15px 0 0;
+  }
+
+  .sidebar-link span,
+  .sidebar-link:hover span,
+  .is-inview span {
+    color: #fff;
+  }
+
+  .is-inview:after {
+    position: absolute;
+    top: 31px;
+    right: 45%;
+    border-bottom: 10px solid #fff;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+  }
+
+  .tesla-panel-contact {
+    min-height: 120vh;
+  }
+
+}
+
