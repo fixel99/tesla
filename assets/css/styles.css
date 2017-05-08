@@ -77,21 +77,21 @@ h2 {
 }*/
 
 
-/*Google Map embed responsive - Commented out until properly implemented */
+/*Google Map embed responsive */
 
-/*.google-maps {
+.google-maps {
         position: relative;
-        padding-bottom: 100%; // This is the aspect ratio
+        /*padding-bottom: 100%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
-    }
-    .google-maps iframe {
+}
+.google-maps iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100% !important;
-        /*height: 100% !important;
-    }*/
+        /*height: 100% !important;*/
+}
 
 
 /* sidebar */
@@ -244,7 +244,7 @@ h2 {
 /* all tesla-panels */
 
 .tesla-panel {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10vh;
   background-attachment: fixed;
   background-position: center;
@@ -293,7 +293,9 @@ h2 {
 /* tesla-panel - map */
 
 .tesla-panel-map {
+  padding-top: 2vh;
   background-image: url(../img/map-blurred.jpg);
+  padding-bottom: 2vh;
 }
 
 
@@ -335,6 +337,7 @@ h2 {
   margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 
 /* tesla-panel fade in */
 
@@ -391,4 +394,8 @@ textarea {
 
 .error{
   border:2px solid red;
+=======
+iframe, object, embed {
+    max-width: 100%;
+>>>>>>> google-map-embed
 }

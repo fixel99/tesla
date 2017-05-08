@@ -36,7 +36,7 @@
     <ul class="sidebar" role="navigation">
       <li><a class="sidebar-link sidebar-link-home" href="#home"><span>Home</span></a></li>
       <li><a class="sidebar-link sidebar-link-models" href="#models"><span>Models</span></a></li>
-      <li><a class="sidebar-link sidebar-link-map" href="#map"><span>Map</span></a></li>
+      <li><a class="sidebar-link sidebar-link-map" href="#map"><span>Locations</span></a></li>
       <li><a class="sidebar-link sidebar-link-about" href="#about"><span>About</span></a></li>
       <li><a class="sidebar-link sidebar-link-contact" href="#contact"><span>Contact</span></a></li>
     </ul>
@@ -121,21 +121,22 @@
 
       <!-- row5-map -->
       <div class="row tesla-panel tesla-panel-map" id="map">
-        <div class="col-sm-4 col-sm-offset-4">
+        <div class="col-sm-10 col-sm-offset-1">
           <div class="text-panel text-center">
-            <h2>Map</h2>
-            <p>Choose the closest location:</p> <!-- Map should display depending on which button clicked -->
+            <h2>Dealership Locations</h2>
+            <p class="font-size-20">Choose the closest location to you:</p>
+            <a class="btn btn-primary" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=14&ll=-33.8168432, 151.1930646" target="search_iframe">St. Leonards</a>
             <br>
-            <button class="btn btn-primary">Sydney CBD</button>
+            <br>
+            <a class="btn btn-danger" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=14&ll=-33.8673355, 151.2065621" target="search_iframe">Martin Place</a>
             <br>
             <br>
-            <button class="btn btn-primary">St. Leonards</button>
+            <p class="font-size-20">(Click on a pin for more info)</p>
+            <div class="google-maps">
+              <iframe name="search_iframe" src="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" width="1000" height="400"></iframe>
+            </div>
           </div>
         </div>
-        <!-- <div class="google-maps col-sm-8 col-sm-offset-2"> - Embeded Google Map - Commented out until properly implemented
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d91146.49297011238!2d151.10988100208257!3d-33.82082669637892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12aed92bc3c9ad%3A0x2a44e27b89e19b66!2sTesla+Motors!5e0!3m2!1sen!2sau!4v1491273778285" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>-->
-        <iframe src="https://www.google.com/maps/d/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs" width="640" height="480"></iframe>
       </div>
 
       <!-- row6-about -->
@@ -218,9 +219,11 @@
 
       });
 
+
       $('#email').on('input', function() {
         $('#email').removeClass("error");
       });
+
 
       $('#name').on('input', function() {
         $('#name').removeClass("error");
@@ -294,7 +297,7 @@
       preload([
         'assets/img/model-s-mountains.jpg',
         'assets/img/models.png'
-        
+
        /* 'assets/img/anotherOne.jpg',
        'assetsimg/blahblahblah.jpg'*/
       ]);
