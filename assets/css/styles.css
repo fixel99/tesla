@@ -198,7 +198,7 @@ h2 {
 /* all tesla-panels */
 
 .tesla-panel {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 10vh;
   background-attachment: fixed;
   background-position: center;
