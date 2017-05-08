@@ -337,7 +337,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
+
 
 /* tesla-panel fade in */
 
@@ -394,8 +394,9 @@ textarea {
 
 .error{
   border:2px solid red;
-=======
+}
+
 iframe, object, embed {
     max-width: 100%;
->>>>>>> google-map-embed
+
 }
