@@ -16,6 +16,9 @@
     <!-- Bootstrap Core CSS file -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
+    <!-- SweetAlert CSS file -->
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+
     <!-- Override CSS file -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -30,7 +33,7 @@
 
   <!-- Sidenav -->
   <div id="js-scrollspy">
-    <ul class="sidebar hidden-sm hidden-xs" role="navigation">
+    <ul class="sidebar" role="navigation">
       <li><a class="sidebar-link sidebar-link-home" href="#home"><span>Home</span></a></li>
       <li><a class="sidebar-link sidebar-link-models" href="#models"><span>Models</span></a></li>
       <li><a class="sidebar-link sidebar-link-map" href="#map"><span>Locations</span></a></li>
@@ -151,21 +154,25 @@
       <div class="row tesla-panel tesla-panel-contact" id="contact">
         <div class="col-sm-6 col-sm-offset-3">
           <div class="text-panel">
-            <h2>Contact Us</h2>
-            <form action="#">
+            <h2 id="contact-h2">Contact Us</h2>
+            <h2 id="done-h2">Form Successfully Submitted!</h2>
+            <p id="done-p" class="font-size-20">We will get back to you soon.</p>
+            <br>
+            <button type="submit" class="btn btn-primary" id="done-submit">Submit Another</button>
+            <form action="#" id="contact-form">
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
               </div>
               <div class="form-group">
                 <label for="exampleInputName1">Name</label>
-                <input type="password" class="form-control" id="exampleInputName1" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
                <div class="form-group">
                 <label for="exampleTextAreaComment1">Comment</label>
-                <textarea class="form-control" rows="3" id="exampleTextAreaComment1" placeholder="Comment"></textarea>
+                <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" id="form-submit">Submit</button>
             </form>
           </div>
         </div>
@@ -173,6 +180,8 @@
     </div>
     <!-- /.container-fluid -->
 
+
+    <!-- ScrollSpy scripts -->
     <script src="scrollspy.js"></script>
       <script>
         var spy = new ScrollSpy('#js-scrollspy', {
@@ -189,7 +198,8 @@
       </script>
 
 
-
+      <!-- SweerAlert scripts -->
+      <script src="dist/sweetalert.min.js"></script>
 
 
 
@@ -197,11 +207,100 @@
 
     <!-- JQuery scripts -->
       <script src="assets/js/jquery-1.11.2.min.js"></script>
-        <script>
-          /*function leonard(){
-            document.getElementByID("")
-          }*/
+      <script>
 
+      $( document ).ready(function() {
+        $('#done-h2').hide();
+        $('#done-submit').hide();
+        $('#done-p').hide();
+
+
+        console.log( "ready!" );
+
+      });
+
+      $('#email').on('input', function() {
+        $('#email').removeClass("error");
+      });
+
+      $('#name').on('input', function() {
+        $('#name').removeClass("error");
+      });
+
+      $('#comment').on('input', function() {
+        $('#comment').removeClass("error");
+      });
+
+
+      $('#contact-form').on('submit', function(event) {
+        event.preventDefault();
+        var empty = false;
+        var count = 0;
+
+        $('form#contact-form :input').each(function(){
+          if($(this).val()==""){
+            empty = true;
+            //console.log($(this));
+            if(!$(this).is(":button")){
+              $(this).addClass("error");
+            }
+
+            count++;
+            //console.log(count);
+          }
+          });
+        if(count == 1){
+          //console.log("other" + count);
+          $('#form-submit').after("<br class='loading'><img class='loading' src='./assets/img/loading.gif' width='80' height='80'>");
+          $('#form-submit').hide();
+          window.setTimeout(function(){
+            $('#contact-form').hide();
+            $('#contact-h2').hide();
+            $('#done-h2').show();
+            $('#done-submit').show();
+            $('#done-p').show();
+            $('.loading').remove()
+          }, Math.floor((Math.random() * 2000) + 500)); // Simulate a loadtime with a random number within a few seconds
+        }
+        else{
+          sweetAlert("Oops...", "Make sure you fill out all fields!", "error");
+        }
+
+      });
+
+      $( "#done-submit" ).click(function() {
+
+        $('#done-h2').hide();
+        $('#done-submit').hide();
+        $('#done-p').hide();
+
+        $('#contact-form').show();
+        $('#contact-h2').show();
+        $('#form-submit').show();
+        $('#contact-form')[0].reset();
+        empty = true;
+
+
+      });
+
+
+      function preload(arrayOfImages) {
+        $(arrayOfImages).each(function(){
+        $('<assets/img/>')[0].src = this;
+        });
+      }
+
+
+
+      preload([
+        'assets/img/model-s-mountains.jpg',
+        'assets/img/models.png'
+        
+       /* 'assets/img/anotherOne.jpg',
+       'assetsimg/blahblahblah.jpg'*/
+      ]);
+
+      </script>
 
     <!-- Bootstrap Core scripts -->
     <script src="assets/js/bootstrap.min.js"></script>
