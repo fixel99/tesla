@@ -193,6 +193,16 @@ h2 {
 }
 
 
+/* icons */
+
+.sidebar-link-home,
+.sidebar-link-models,
+.sidebar-link-map,
+.sidebar-link-about,
+.sidebar-link-contact {
+  background-size: 100%;
+}
+
 /* home */
 
 .sidebar-link-home {
