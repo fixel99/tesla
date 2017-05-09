@@ -108,7 +108,7 @@ h2 {
 
 .sidebar-link span {
   position: absolute;
-  bottom: 20px;
+  bottom: 5px;
   left: 0;
   width: 100%;
   color: #000;
@@ -238,7 +238,7 @@ h2 {
 
 .tesla-panel-map {
   background-image: url(../img/map-blurred.jpg);
-  padding-bottom: 2vh;
+  padding-bottom: 10vh;
 }
 
 
@@ -385,7 +385,7 @@ iframe, object, embed {
   }
 
   .tesla-panel-contact {
-    min-height: 120vh;
+    min-height: 110vh;
   }
 
 }
