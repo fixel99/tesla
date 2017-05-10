@@ -209,7 +209,7 @@ h2 {
 
 .tesla-panel-modelshome {
   background-image: url(../img/models.png);
-  /* Background needs to be centered to page in order to avoice cutoff */
+  /* Background needs to be centered to page in order to avoid cutoff */
 }
 
 
@@ -253,6 +253,7 @@ h2 {
 
 .tesla-panel-contact {
   background-image: url(../img/tesla-showroom.jpeg);
+  min-height: 101vh;
 }
 
 .tesla-panel-contact img {
@@ -389,4 +390,3 @@ iframe, object, embed {
   }
 
 }
-
