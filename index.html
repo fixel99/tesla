@@ -285,21 +285,28 @@
       });
 
 
-      function preload(arrayOfImages) {
-        $(arrayOfImages).each(function(){
-        $('<assets/img/>')[0].src = this;
-        });
-      }
-
-
-
-      preload([
-        'assets/img/model-s-mountains.jpg',
-        'assets/img/models.png'
-
-       /* 'assets/img/anotherOne.jpg',
-       'assetsimg/blahblahblah.jpg'*/
-      ]);
+      // v Image Preloading v //
+      
+      <!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"assets/img/loading.gif",
+				"assets/img/model-s-mountains",
+				"assets/img/models.png",
+				"assets/img/model-s.png",
+				"assets/img/model-x.jpg",
+				"assets/img/model-3.jpeg"
+			)
+		//--><!]]>
+      
+      
+      
 
       </script>
 
