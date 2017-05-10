@@ -18,9 +18,3 @@ Maybe:
 
 1) Add seperate page for each model
 
-2) Add more form validation + show where form not filled in
-
-3) Add backend to form
-
-4) Add eastereggs
-
