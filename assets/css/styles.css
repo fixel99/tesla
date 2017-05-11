@@ -347,6 +347,15 @@ iframe, object, embed {
 
 }
 
+.google-maps iframe{
+	pointer-events: none;
+}
+
+.google-maps iframe.clicked{
+	pointer-events: auto;
+}
+
+
 /* small sizes */
 
 @media (max-width: 991px) {

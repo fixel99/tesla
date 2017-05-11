@@ -132,8 +132,8 @@
             <br>
             <br>
             <p class="font-size-20">(Click on a pin for more info)</p>
-            <div class="google-maps">
-              <iframe name="search_iframe" src="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" width="1000" height="400"></iframe>
+            <div id="overlay" class="google-maps">
+              <iframe name="search_iframe" scrolling="no" src="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" width="1000" height="400"></iframe>
             </div>
           </div>
         </div>
@@ -305,7 +305,9 @@
 			)
 		//--><!]]>
 
-
+    $('.google-maps').click(function(){
+			$(this).find('iframe').addClass('clicked')}).mouseleave(function(){
+			  $(this).find('iframe').removeClass('clicked')});
 
 
       </script>
