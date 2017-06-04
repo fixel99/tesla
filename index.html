@@ -282,46 +282,14 @@
 
       });
 
-      $(".sidebar-link-models").on("click",function(){
+
+      $(".sidebar-link").on("click",function(){ // Function to fix scrollspy scrolling issues
 
         setTimeout(function (){
 
             window.scrollBy(0, 1);
 
         }, 1);
-
-
-      });
-
-      $(".sidebar-link-map").on("click",function(){
-
-        setTimeout(function (){
-
-            window.scrollBy(0, 1);
-
-        }, 1);
-
-
-      });
-
-      $(".sidebar-link-about").on("click",function(){
-
-        /*var n = $(document).height() - document.getElementById('about').offsetHeight*2 + 1;
-        $('html, body').animate({ scrollTop: n }, 1);*/
-        setTimeout(function (){
-
-            window.scrollBy(0, 1);
-
-        }, 1);
-
-
-
-      });
-
-      $(".sidebar-link-contact").on("click",function(){
-
-        var n = $(document).height() - document.getElementById('contact').offsetHeight + 1;
-        $('html, body').animate({ scrollTop: n }, 1);
 
 
       });
