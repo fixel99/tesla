@@ -38,7 +38,7 @@
       <li><a class="sidebar-link sidebar-link-models" href="#models"><span>Models</span></a></li>
       <li><a class="sidebar-link sidebar-link-map" href="#map"><span>Locations</span></a></li>
       <li><a class="sidebar-link sidebar-link-about" href="#about"><span>About</span></a></li>
-      <li><a class="sidebar-link sidebar-link-contact" href="#contact"><span>Contact</span></a></li>
+      <li><a class="sidebar-link sidebar-link-contact contact-hack" href="#contact"><span>Contact</span></a></li>
     </ul>
   </div>
 
@@ -278,6 +278,14 @@
         $('#form-submit').show();
         $('#contact-form')[0].reset();
         empty = true;
+
+
+      });
+
+      $(".contact-hack").on("click",function(){
+
+        var n = $(document).height() - document.getElementById('contact').clientHeight + 1;
+        $('html, body').animate({ scrollTop: n }, 1);
 
 
       });
