@@ -38,7 +38,7 @@
       <li><a class="sidebar-link sidebar-link-models" href="#models"><span>Models</span></a></li>
       <li><a class="sidebar-link sidebar-link-map" href="#map"><span>Locations</span></a></li>
       <li><a class="sidebar-link sidebar-link-about" href="#about"><span>About</span></a></li>
-      <li><a class="sidebar-link sidebar-link-contact contact-hack" href="#contact"><span>Contact</span></a></li>
+      <li><a class="sidebar-link sidebar-link-contact" href="#contact"><span>Contact</span></a></li>
     </ul>
   </div>
 
@@ -282,9 +282,45 @@
 
       });
 
-      $(".contact-hack").on("click",function(){
+      $(".sidebar-link-models").on("click",function(){
 
-        var n = $(document).height() - document.getElementById('contact').clientHeight + 1;
+        setTimeout(function (){
+
+            window.scrollBy(0, 1);
+
+        }, 1);
+
+
+      });
+
+      $(".sidebar-link-map").on("click",function(){
+
+        setTimeout(function (){
+
+            window.scrollBy(0, 1);
+
+        }, 1);
+
+
+      });
+
+      $(".sidebar-link-about").on("click",function(){
+
+        /*var n = $(document).height() - document.getElementById('about').offsetHeight*2 + 1;
+        $('html, body').animate({ scrollTop: n }, 1);*/
+        setTimeout(function (){
+
+            window.scrollBy(0, 1);
+
+        }, 1);
+
+
+
+      });
+
+      $(".sidebar-link-contact").on("click",function(){
+
+        var n = $(document).height() - document.getElementById('contact').offsetHeight + 1;
         $('html, body').animate({ scrollTop: n }, 1);
 
 
