@@ -66,9 +66,9 @@
               <p class="font-size-20">Tesla has models suited to our consumers everyneeds. Whether you are a modest family looking for something affordable, or are a die-hard enthusiast that must have the most modern tech-filled car out there - we've got your back.</p>
               <br>
               <br>
-              <a class="btn btn-primary" href="#model1">Model S</a>
-              <a class="btn btn-primary" href="#model2">Model X</a>
-              <a class="btn btn-primary" href="#model3">Model 3</a>
+              <a class="btn btn-primary s" href="#model1">Model S</a>
+              <a class="btn btn-primary x" href="#model2">Model X</a>
+              <a class="btn btn-primary 3" href="#model3">Model 3</a>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@
             <a class="btn btn-danger" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=14&ll=-33.8673355,151.2065621" target="search_iframe">Martin Place</a>
             <br>
             <br>
-            <a class="btn btn-success" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" target="search_iframe">Reset Map</a>
+            <a class="btn btn-success" href="https://www.google.com/maps/d/u/1/embed?mid=1_omnZO7Soj5VMBcJJOWGnM57VNs&z=12" target="search_iframe">Reload Map</a>
             <br>
             <br>
             <p class="font-size-20">(Click on a pin for more info)</p>
@@ -237,6 +237,21 @@
         var empty = false;
         var count = 0;
 
+        setTimeout(function (){
+
+          if ($(".showSweetAlert").length > 0){
+            console.log("Button is visible");
+            setInterval(function(){
+
+               $(".confirm").removeAttr('style');
+
+             }, 1);
+          };
+
+
+        }, 1);
+
+
         $('form#contact-form :input').each(function(){
           if($(this).val()==""){
             empty = true;
@@ -293,6 +308,16 @@
 
 
       });
+
+
+      $(".s").on('mouseover', function(){
+
+        console.log("test");
+
+      });
+
+
+
 
 
       // v Image Preloading v //

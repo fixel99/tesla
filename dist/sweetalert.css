@@ -172,7 +172,7 @@
     opacity: 0;
     visibility: hidden; }
   .sweet-alert button {
-    background-color: #8CD4F5;
+    background-color: #337ab7;
     color: white;
     border: none;
     box-shadow: none;
@@ -187,15 +187,15 @@
       outline: none;
       box-shadow: 0 0 2px rgba(128, 179, 235, 0.5), inset 0 0 0 1px rgba(0, 0, 0, 0.05); }
     .sweet-alert button:hover {
-      background-color: #7ecff4; }
+      background-color: #337ab7; }
     .sweet-alert button:active {
-      background-color: #5dc2f1; }
+      background-color: #337ab7; }
     .sweet-alert button.cancel {
-      background-color: #C1C1C1; }
+      background-color: #337ab7; }
       .sweet-alert button.cancel:hover {
-        background-color: #b9b9b9; }
+        background-color: #337ab7; }
       .sweet-alert button.cancel:active {
-        background-color: #a8a8a8; }
+        background-color: #337ab7; }
       .sweet-alert button.cancel:focus {
         box-shadow: rgba(197, 205, 211, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset !important; }
     .sweet-alert button[disabled] {
