@@ -1,0 +1,49 @@
+// base styles
+
+// Overide text to display white
+
+html * {
+  color: #fff;
+}
+
+
+// md+ include padding for side navbar
+
+@media (min-width: 992px) {
+  body {
+    padding-left: 10%;
+  }
+}
+
+
+// sm- get rid of padding for side navbar
+
+@media (max-width: 991px) {
+  body {
+    padding-top: 50px !important;
+    padding-left: 0 !important;
+  }
+}
+
+
+// headings
+
+h1,
+h2 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+
+// Stop comment area from resizing
+
+textarea {
+  resize: none;
+}

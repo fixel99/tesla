@@ -1,0 +1,42 @@
+// font size helpers
+
+.font-size-100 {
+  font-size: 100px;
+}
+
+.font-size-90 {
+  font-size: 90px;
+}
+
+.font-size-80 {
+  font-size: 80px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+// Remove space around loading elements
+
+.loading {
+  border: 0;
+  padding: 0;
+}
+
+
+// error helper
+
+.error {
+  border: 2px solid red;
+}
+
+
+// heading classes
+
+.home-heading {
+  margin-bottom: 15px;
+}
+
+.home-subheading {
+  margin-bottom: 20px;
+}

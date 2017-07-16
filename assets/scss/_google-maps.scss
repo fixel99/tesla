@@ -1,0 +1,18 @@
+// Google Map embed responsive
+
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
+
+
+// google-maps
+
+.google-maps iframe{
+  pointer-events: none;
+}
+
+.google-maps iframe.clicked{
+  pointer-events: auto;
+}

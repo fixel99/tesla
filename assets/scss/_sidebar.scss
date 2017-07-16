@@ -1,0 +1,146 @@
+// sidebar
+
+.sidebar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+// all sidebar links
+
+.sidebar-link {
+  position: relative;
+  display: block;
+  height: 20vh;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sidebar-link span {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  color: #000;
+}
+
+.sidebar-link:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.sidebar-link:hover span {
+  color: #fff;
+}
+
+.is-inview:after {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  border-top: 8px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 8px solid transparent;
+  content: '';
+}
+
+.is-inview span {
+  color: #fff;
+}
+
+
+// sidebar icons
+
+.sidebar-link-home,
+.sidebar-link-models,
+.sidebar-link-map,
+.sidebar-link-about,
+.sidebar-link-contact {
+  background-size: 100%;
+}
+
+
+// sidebar home
+
+.sidebar-link-home {
+  background-image: url(../img/sidebar-home.svg);
+}
+
+
+// sidebar models
+
+.sidebar-link-models {
+  background-image: url(../img/sidebar-models.svg);
+}
+
+
+// sidebar map
+
+.sidebar-link-map {
+  background-image: url(../img/sidebar-map.svg);
+}
+
+
+// sidebar about
+
+.sidebar-link-about {
+  background-image: url(../img/sidebar-about.svg);
+}
+
+
+// sidebar contact
+
+.sidebar-link-contact {
+  background-image: url(../img/sidebar-contact.svg);
+}
+
+
+
+// small sizes
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 100vw;
+    height: 50px;
+    font-size: 12px;
+  }
+
+  .sidebar-link {
+    float: left;
+    width: 20vw;
+    height: 50px;
+    border-right: 1px solid #666;
+    background-image: none !important;
+  }
+
+  .sidebar-link span {
+    position: static;
+    display: inline-block;
+    padding: 15px 0 0;
+  }
+
+  .sidebar-link span,
+  .sidebar-link:hover span,
+  .is-inview span {
+    color: #fff;
+  }
+
+  .is-inview:after {
+    position: absolute;
+    top: 31px;
+    right: 45%;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 8px solid transparent;
+  }
+}
